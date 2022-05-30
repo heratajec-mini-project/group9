@@ -8,6 +8,8 @@ import {
   ActivityIndicator,
   Dimensions,
   ImageBackground,
+  SafeAreaView,
+  ScrollView,
 } from "react-native";
 import { Avatar } from "react-native-elements";
 import TV8 from "../images/TV8.png";
@@ -50,6 +52,8 @@ export default function register({ navigation }) {
       source={login3}
       style={{ flex: 1, resizeMode: "cover", width: "100%", height: "100%" }}
     >
+    <ScrollView>
+    
       <View style={styles.container}>
         <View style={{ alignItems: "center", justifyContent: "center" }}>
           <Avatar size={64} rounded source={TV8} />
@@ -103,7 +107,7 @@ export default function register({ navigation }) {
                 style={{
                   color: "red",
                   width: windowWidth / 2 - 20,
-                  height: 50,
+                  height: 60,
                   padding: 20,
                   borderRadius: 30,
                   fontSize: 20,
@@ -121,7 +125,7 @@ export default function register({ navigation }) {
                 style={{
                   color: "red",
                   width: windowWidth / 2 - 20,
-                  height: 50,
+                  height: 60,
                   padding: 20,
                   borderRadius: 30,
                   fontSize: 20,
@@ -165,7 +169,9 @@ export default function register({ navigation }) {
          
         </View>
       </View>
+    </ScrollView>
     </ImageBackground>
+    
   );
 }
 
@@ -179,12 +185,13 @@ const styles = StyleSheet.create({
   signupBtn: {
     width: 210,
     borderRadius: 5,
-    height: 50,
+    height: 60,
     alignItems: "center",
     justifyContent: "center",
     backgroundColor: "red",
     padding: 20,
     borderRadius: 30,
+    margin:10,
   },
   input: {
     color: "#000",
@@ -194,7 +201,7 @@ const styles = StyleSheet.create({
   textInp: {
     color: "red",
     width: 318,
-    height: 50,
+    height: 60,
     padding: 20,
     borderRadius: 30,
     fontSize: 20,

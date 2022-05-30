@@ -94,7 +94,10 @@ export default function home({ navigation }) {
             <Text>End Time8:pm:</Text>
             <Text>Address: Silverbird Cinema, Accra Mall</Text>
             <TouchableOpacity style={styles.roundButton1} onPress={handlePress}>
-              <Text>Buy Ticket</Text>
+              <Text style={{fontSize:16}}>Buy</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.roundButton1} onPress={handlePress}>
+              <Text style={{fontSize:16}}>Buy VIP</Text>
             </TouchableOpacity>
           </Card>
 
@@ -115,7 +118,10 @@ export default function home({ navigation }) {
             <Text>End Time: 11pm</Text>
             <Text>Address: West Hills Cinema</Text>
             <TouchableOpacity style={styles.roundButton1} onPress={handlePress}>
-              <Text>Buy Ticket</Text>
+              <Text style={{fontSize:16}}>Buy</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.roundButton1} onPress={handlePress}>
+              <Text style={{fontSize:16}}>Buy VIP</Text>
             </TouchableOpacity>
           </Card>
         </View>
@@ -138,7 +144,10 @@ export default function home({ navigation }) {
             <Text>End Time: 8pm</Text>
             <Text>Address: Silverbird Cinema Accra</Text>
             <TouchableOpacity style={styles.roundButton1} onPress={handlePress}>
-              <Text>Buy Ticket</Text>
+              <Text style={{fontSize:16}}>Buy</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.roundButton1} onPress={handlePress}>
+              <Text style={{fontSize:16}}>Buy VIP</Text>
             </TouchableOpacity>
           </Card>
 
@@ -159,7 +168,10 @@ export default function home({ navigation }) {
             <Text>End Time: 9:00pm</Text>
             <Text>Address: West Hills Cinema</Text>
             <TouchableOpacity style={styles.roundButton1} onPress={handlePress}>
-              <Text>Buy Ticket</Text>
+              <Text style={{fontSize:16}}>Buy</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.roundButton1} onPress={handlePress}>
+              <Text style={{fontSize:16}}>Buy VIP</Text>
             </TouchableOpacity>
           </Card>
         </View>
@@ -182,7 +194,10 @@ export default function home({ navigation }) {
             <Text>End Time: 7:45pm</Text>
             <Text>Address:Silverbird Cinema Accra Mall</Text>
             <TouchableOpacity style={styles.roundButton1} onPress={handlePress}>
-              <Text>Buy Ticket</Text>
+              <Text style={{fontSize:16}}>Buy</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.roundButton1} onPress={handlePress}>
+              <Text style={{fontSize:16}}>Buy VIP</Text>
             </TouchableOpacity>
           </Card>
 
@@ -203,8 +218,11 @@ export default function home({ navigation }) {
             <Text>End Time: 8:50pm</Text>
             <Text>Address: West Hills Mall</Text>
             <TouchableOpacity style={styles.roundButton1} onPress={handlePress}>
-              <Text>Buy Ticket</Text>
+              <Text style={{fontSize:16}}>Buy</Text>
             </TouchableOpacity>
+            <TouchableOpacity style={styles.roundButton1} onPress={handlePress}>
+              <Text style={{fontSize:16}}>Buy VIP</Text>
+            </TouchableOpacity> 
           </Card>
         </View>
 
@@ -226,7 +244,10 @@ export default function home({ navigation }) {
             <Text>End Time: 9:30pm</Text>
             <Text>Address: Silverbird Cinema Accra Mall</Text>
             <TouchableOpacity style={styles.roundButton1} onPress={handlePress}>
-              <Text>Buy Ticket</Text>
+              <Text style={{fontSize:16}}>Buy</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.roundButton1} onPress={handlePress}>
+              <Text style={{fontSize:16}}>Buy VIP</Text>
             </TouchableOpacity>
           </Card>
 
@@ -247,7 +268,10 @@ export default function home({ navigation }) {
             <Text>End Time: 11pm</Text>
             <Text>Address: West Hills Mall</Text>
             <TouchableOpacity style={styles.roundButton1} onPress={handlePress}>
-              <Text>Buy Ticket</Text>
+              <Text style={{fontSize:16}}>Buy</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.roundButton1} onPress={handlePress}>
+              <Text style={{fontSize:16}}>Buy VIP</Text>
             </TouchableOpacity>
           </Card>
         </View>
@@ -270,7 +294,10 @@ export default function home({ navigation }) {
             <Text>End Time: 5:45pm</Text>
             <Text>Address: Silverbird Cinema Accra Mall</Text>
             <TouchableOpacity style={styles.roundButton1} onPress={handlePress}>
-              <Text>Buy Ticket</Text>
+              <Text style={{fontSize:16}}>Buy</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.roundButton1} onPress={handlePress}>
+              <Text style={{fontSize:16}}>Buy VIP</Text>
             </TouchableOpacity>
           </Card>
 
@@ -291,7 +318,10 @@ export default function home({ navigation }) {
             <Text>End Time: 7pm</Text>
             <Text>Address: West Hills Mall</Text>
             <TouchableOpacity style={styles.roundButton1} onPress={handlePress}>
-              <Text>Buy Ticket</Text>
+              <Text style={{fontSize:16}}>Buy</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.roundButton1} onPress={handlePress}>
+              <Text style={{fontSize:16}}>Buy VIP</Text>
             </TouchableOpacity>
           </Card>
         </View>
@@ -314,7 +344,10 @@ export default function home({ navigation }) {
             <Text>End Time: 1am</Text>
             <Text>Address: Silverbird Cinema Accra Mall</Text>
             <TouchableOpacity style={styles.roundButton1} onPress={handlePress}>
-              <Text>Buy Ticket</Text>
+              <Text style={{fontSize:16}}>Buy</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.roundButton1} onPress={handlePress}>
+              <Text style={{fontSize:16}}>Buy VIP</Text>
             </TouchableOpacity>
           </Card>
 
@@ -335,7 +368,10 @@ export default function home({ navigation }) {
             <Text>End Time: 3:10pm</Text>
             <Text>Address: West Hills Mall</Text>
             <TouchableOpacity style={styles.roundButton1} onPress={handlePress}>
-              <Text>Buy Ticket</Text>
+              <Text style={{fontSize:16}}>Buy</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.roundButton1} onPress={handlePress}>
+              <Text style={{fontSize:16}}>Buy VIP</Text>
             </TouchableOpacity>
           </Card>
         </View>
@@ -355,7 +391,7 @@ const styles = StyleSheet.create({
   },
   roundButton1: {
     width: 120,
-    height: 40,
+    height: 60,
     justifyContent: "center",
     alignItems: "center",
     padding: 20,

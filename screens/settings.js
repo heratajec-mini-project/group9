@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, TouchableOpacity } from "react-native";
+import { View, Text, TouchableOpacity, SafeAreaView } from "react-native";
 
 export default function settings() {
   const handlePress = () => {
@@ -21,6 +21,7 @@ export default function settings() {
   };
 
   return (
+    <SafeAreaView>
     <View>
       <Text>Settings Screen</Text>
       <TouchableOpacity>
@@ -36,5 +37,6 @@ export default function settings() {
         </Text>
       </TouchableOpacity>
     </View>
+    </SafeAreaView>
   );
 }

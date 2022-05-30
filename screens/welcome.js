@@ -7,6 +7,7 @@ import {
   StyleSheet,
   TouchableOpacity,
   ImageBackground,
+  SafeAreaView,
 } from "react-native";
 import { Avatar } from "react-native-elements";
 
@@ -14,6 +15,7 @@ import backimage from "../images/backimage.jpg";
 import ticket from "../images/ticket.jpg";
 export default function welcome({ navigation }) {
   return (
+    
     <ImageBackground
       source={backimage}
       style={{ flex: 1, resizeMode: "cover", width: "100%", height: "100%" }}
@@ -28,17 +30,18 @@ export default function welcome({ navigation }) {
           onPress={() => navigation.navigate("login")}
           style={styles.roundButton1}
         >
-          <Text>Login</Text>
+          <Text style={{fontSize:16}}>Login</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
           onPress={() => navigation.navigate("register")}
           style={styles.roundButton2}
         >
-          <Text>Sign Up</Text>
+          <Text style={{fontSize:16}}>Sign Up</Text>
         </TouchableOpacity>
       </View>
     </ImageBackground>
+    
   );
 }
 
@@ -63,7 +66,7 @@ const styles = StyleSheet.create({
   },
   roundButton1: {
     width: 200,
-    height: 50,
+    height: 60,
     justifyContent: "center",
     alignItems: "center",
     padding: 20,
@@ -73,7 +76,7 @@ const styles = StyleSheet.create({
   },
   roundButton2: {
     width: 200,
-    height: 50,
+    height: 60,
     justifyContent: "center",
     alignItems: "center",
     padding: 20,
