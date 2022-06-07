@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {
   View,
   Text,
@@ -7,36 +7,81 @@ import {
   TouchableOpacity,
 } from "react-native";
 
-export default class payment extends React.Component {
-  state = {
-    CardNumber: null,
-    Expiration: null,
-    CVV: null,
-    State: null,
-    Zip: null,
-    Address: null,
-    Email: null,
-    PhoneNumber: null,
-  };
+// export default class payment extends React.Component {
+//   state = {
+//     CardNumber: null,
+//     Expiration: null,
+//     CVV: null,
+//     State: null,
+//     Zip: null,
+//     Address: null,
+//     Email: null,
+//     PhoneNumber: null,
+//   };
 
-  render() {
-    return (
-      <View>
+//   render(navigation) {
+//     return (
+//       <View>
+//         <TextInput
+//           placeholder="Card Number"
+//           onChangeText={(newTerm) => this.setState({ CardNumber: newTerm })}
+//           style={styles.input}
+//           multiline
+//         />
+//         <TextInput
+//           placeholder="Exp. Month/Year"
+//           onChangeText={(newTerm) => this.setState({ Expiration: newTerm })}
+//           style={styles.input}
+//           multiline
+//         />
+//         <TextInput
+//           placeholder="CVV"
+//           onChangeText={(newTerm) => this.setState({ CVV: newTerm })}
+//           style={styles.input}
+//           multiline
+//         />
+//         <View style={styles.row}>
+//           <Text>
+//             Your privacy is important to us. We will only contact you if there
+//             is an issue with your order.
+//           </Text>
+//         </View>
+//         <View style={styles.button}>
+//           <TouchableOpacity onPress={() => navigation.navigate("confirm")}>
+//             <Text style={styles.text}>SAVE AND CONTINUE</Text>
+//           </TouchableOpacity>
+//         </View>
+//       </View>
+//     );
+//   }
+// }
+export default function payment({navigation}) {
+  const [cnum, setCnum] = useState("");
+  const [exp, setExp] = useState("");
+  const [ccv, setCcv] = useState("");
+
+  const handlePress = () => {
+    navigation.navigate("confirm");
+    console.log("Pressed");
+  };
+  
+  return (
+    <View>
         <TextInput
           placeholder="Card Number"
-          onChangeText={(newTerm) => this.setState({ CardNumber: newTerm })}
+          onChangeText={(cnum) => setCnum(cnum)}
           style={styles.input}
           multiline
         />
         <TextInput
           placeholder="Exp. Month/Year"
-          onChangeText={(newTerm) => this.setState({ Expiration: newTerm })}
+          onChangeText={(exp) => setExp(exp)}
           style={styles.input}
           multiline
         />
         <TextInput
           placeholder="CVV"
-          onChangeText={(newTerm) => this.setState({ CVV: newTerm })}
+          onChangeText={(ccv) => setCcv(ccv)}
           style={styles.input}
           multiline
         />
@@ -47,13 +92,12 @@ export default class payment extends React.Component {
           </Text>
         </View>
         <View style={styles.button}>
-          <TouchableOpacity onPress={() => this.props.changeState(2)}>
-            <Text style={styles.text}>SAVE AND CONTINUTE</Text>
+          <TouchableOpacity onPress={handlePress}>
+            <Text style={styles.text} onPress={handlePress}>SAVE AND CONTINUE</Text>
           </TouchableOpacity>
         </View>
       </View>
-    );
-  }
+  )
 }
 
 const styles = StyleSheet.create({
@@ -73,7 +117,7 @@ const styles = StyleSheet.create({
   button: {
     backgroundColor: "orange",
     marginHorizontal: "5%",
-    height: 30,
+    height: 60,
     justifyContent: "center",
     marginTop: 10,
     padding: 20,
@@ -86,3 +130,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
 });
+
+// import { View, Text } from 'react-native'
+// import React from 'react'
+

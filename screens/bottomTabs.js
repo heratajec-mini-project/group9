@@ -6,11 +6,13 @@ import { Icon } from "react-native-elements";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import settings from "./settings";
 import payment from "./payment";
+import confirm from "./confirm";
 
 const Tab = createBottomTabNavigator();
 
 export default function bottomTabs() {
   return (
+
     <Tab.Navigator showLabel={false} screenOptions={{headerShown:false}}>
       <Tab.Screen
         name="home"
@@ -41,6 +43,15 @@ export default function bottomTabs() {
               color={color}
               size={28}
             />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="confirm"
+        component={confirm}
+        options={{
+          tabBarIcon: ({ color }) => (
+            <Icon name="money" type="material" color={color} size={28} />
           ),
         }}
       />

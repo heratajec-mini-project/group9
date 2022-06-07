@@ -91,13 +91,13 @@ export default function home({ navigation }) {
             <Text>Release Date: 8th May, 2008</Text>
             <Text>Duration: 1 hour 30 minutes</Text>
             <Text>Start Time: 7pm</Text>
-            <Text>End Time8:pm:</Text>
+            <Text>End Time: 8pm</Text>
             <Text>Address: Silverbird Cinema, Accra Mall</Text>
             <TouchableOpacity style={styles.roundButton1} onPress={handlePress}>
-              <Text style={{fontSize:16}}>Buy</Text>
+              <Text style={{fontSize:16}}>Buy GHS20</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.roundButton1} onPress={handlePress}>
-              <Text style={{fontSize:16}}>Buy VIP</Text>
+              <Text style={{fontSize:16}}>Buy VIP GHS35</Text>
             </TouchableOpacity>
           </Card>
 
@@ -118,10 +118,10 @@ export default function home({ navigation }) {
             <Text>End Time: 11pm</Text>
             <Text>Address: West Hills Cinema</Text>
             <TouchableOpacity style={styles.roundButton1} onPress={handlePress}>
-              <Text style={{fontSize:16}}>Buy</Text>
+              <Text style={{fontSize:16}}>Buy GHS20</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.roundButton1} onPress={handlePress}>
-              <Text style={{fontSize:16}}>Buy VIP</Text>
+              <Text style={{fontSize:16}}>Buy VIP GHS45</Text>
             </TouchableOpacity>
           </Card>
         </View>
@@ -144,10 +144,10 @@ export default function home({ navigation }) {
             <Text>End Time: 8pm</Text>
             <Text>Address: Silverbird Cinema Accra</Text>
             <TouchableOpacity style={styles.roundButton1} onPress={handlePress}>
-              <Text style={{fontSize:16}}>Buy</Text>
+              <Text style={{fontSize:16}}>Buy GHS20</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.roundButton1} onPress={handlePress}>
-              <Text style={{fontSize:16}}>Buy VIP</Text>
+              <Text style={{fontSize:16}}>Buy VIP GHS35</Text>
             </TouchableOpacity>
           </Card>
 
@@ -168,10 +168,10 @@ export default function home({ navigation }) {
             <Text>End Time: 9:00pm</Text>
             <Text>Address: West Hills Cinema</Text>
             <TouchableOpacity style={styles.roundButton1} onPress={handlePress}>
-              <Text style={{fontSize:16}}>Buy</Text>
+              <Text style={{fontSize:16}}>Buy GHS20</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.roundButton1} onPress={handlePress}>
-              <Text style={{fontSize:16}}>Buy VIP</Text>
+              <Text style={{fontSize:16}}>Buy VIP GHS35</Text>
             </TouchableOpacity>
           </Card>
         </View>
@@ -194,10 +194,10 @@ export default function home({ navigation }) {
             <Text>End Time: 7:45pm</Text>
             <Text>Address:Silverbird Cinema Accra Mall</Text>
             <TouchableOpacity style={styles.roundButton1} onPress={handlePress}>
-              <Text style={{fontSize:16}}>Buy</Text>
+              <Text style={{fontSize:16}}>Buy GHS20</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.roundButton1} onPress={handlePress}>
-              <Text style={{fontSize:16}}>Buy VIP</Text>
+              <Text style={{fontSize:16}}>Buy VIP GHS35</Text>
             </TouchableOpacity>
           </Card>
 
@@ -218,10 +218,10 @@ export default function home({ navigation }) {
             <Text>End Time: 8:50pm</Text>
             <Text>Address: West Hills Mall</Text>
             <TouchableOpacity style={styles.roundButton1} onPress={handlePress}>
-              <Text style={{fontSize:16}}>Buy</Text>
+              <Text style={{fontSize:16}}>Buy GHS20</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.roundButton1} onPress={handlePress}>
-              <Text style={{fontSize:16}}>Buy VIP</Text>
+              <Text style={{fontSize:16}}>Buy VIP GHS35</Text>
             </TouchableOpacity> 
           </Card>
         </View>
@@ -376,7 +376,7 @@ export default function home({ navigation }) {
           </Card>
         </View>
 
-        <Button title="next" onPress={() => navigation.navigate("register")} />
+        
       </View>
     </ScrollView>
   );

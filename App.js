@@ -15,6 +15,7 @@ import details2 from "./details/details2";
 import details3 from "./details/details3";
 import details4 from "./details/details4";
 
+
 export default function App({ navigation }) {
   const Stack = createNativeStackNavigator();
 
@@ -32,6 +33,7 @@ export default function App({ navigation }) {
         <Stack.Screen name="details2" component={details2} />
         <Stack.Screen name="details3" component={details3} />
         <Stack.Screen name="details4" component={details4} />
+        
       </Stack.Navigator>
     </NavigationContainer>
   );
